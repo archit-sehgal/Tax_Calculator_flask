@@ -11,7 +11,7 @@ function App() {
   const getTaxValue = (event) => {
     event.preventDefault();
     axios
-      .post("http://127.0.0.1:8080/calculate/tax", {income })
+      .post("https://taxcalculator-k815.onrender.com/calculate/tax", {income })
       .then((response) => {
         setTax(response.data.taxvalue);
         console.log(response)
